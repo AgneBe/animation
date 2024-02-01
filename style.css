@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  font-family: 'Lobster', sans-serif;}
+
+body {
+  background: url(picture1.jpg);
+  background-size: cover;
+}
+
+  div {
+    text-align: center;
+    color: #3AA6B9;
+    font-size: 3rem;
+  }
+
+.square2{
+  border: 5px  solid;
+  padding: 20px;
+  width: 500px;
+  margin: auto;
+  background: #C1ECE4;
+  border-radius: 10px;
+  position: absolute;
+  transition: transform 0.8s;}
+
+.square1 {
+  background: #3AA6B9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+  transition: transform 0.8s;
+  position: absolute;
+  width: 500px;}
+  
+  .square2:hover {
+  transform: translate(20px, 20px);}
+
+ .box {
+  background: #FFD0D0;
+  color: #FF9EAA;
+  border: 3px solid #FF9EAA;
+  width: 200px;
+  line-height: 50px;
+  text-align: center;
+  margin: 20px;
+  font-size: 2rem;
+  border-radius: 8px;
+  transition: 1s;
+}
+section {
+  position:relative;
+  top: 200px;
+  left: 50px;
+}
+  .box:hover {
+    background: #C1ECE4;
+    box-shadow: 0 0 30px #FF9EAA;
+  }
+
+  .quick:hover {
+transform: scale(2);
+  }
+  .low:hover {
+    transform: translate(40px);
+  }
+ .high:hover {
+  transform: scale(0.5);
+ }
+ .vegan:hover {
+  transform: translate(20px, -20px);
+ }
+.sweet:hover {
+  animation-name: moving;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+
+}
+
+  @keyframes moving {
+    0% {
+      width: 200px;
+    }
+    100% {
+      width: 700px; 
+    }
+  }
+ 
